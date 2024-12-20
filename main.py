@@ -35,7 +35,7 @@ def check_prox(array, url):
 
 while threading.active_count()>150 :
     time.sleep(5)
-mythread.start()
+Thread.start()
 
 def check(ip, prox, url):
 	try:
