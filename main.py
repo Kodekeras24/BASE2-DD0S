@@ -1,6 +1,5 @@
 #!/usr/bin/python3
 # -*- coding: utf-8  -*-
-
 import requests as r, os, threading, random, click, fake_headers
 from threading import Thread
 from colorama import Fore, Style, Back
@@ -16,7 +15,7 @@ def logo():
 
 # Colored ASCII Art for "sniperelite" using '|_' style
    def ascii_art_sniperelite():
-          print("""
+      print("""
 \033[1;31m        __/ __/ __/       __/ __/     __/ __/ __/   __/ __/ __/  \033[0m
 \033[1;31m       __/       __/  __/      __/  __/            __/          \033[0m
 \033[1;36m      __/       __/  __/      __/  __/            __/          \033[0m
@@ -27,7 +26,6 @@ def logo():
 \033[1;34m   
 \033[1;34m    ## BRIGADE ATTACKER SNIPER ELITE ==> internal script By:ZA99\033[0m ##
 """)
-
 # Password authentication function
 def authenticate():
     password = "6453"  # The password to access the tool
