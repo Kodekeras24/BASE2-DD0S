@@ -33,6 +33,10 @@ def check_prox(array, url):
 		thread_list.append(t)
 		t.start()
 
+while threading.active_count()>150 :
+    time.sleep(5)
+mythread.start()
+
 def check(ip, prox, url):
 	try:
 		ipx = r.get("http://ip.beget.ru/", proxies={'http': "http://{}".format(prox), 'https':"http://{}".format(prox)}).text
