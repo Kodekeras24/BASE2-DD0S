@@ -15,8 +15,7 @@ def logo():
 
 # Colored ASCII Art for "sniperelite" using '|_' style
    def ascii_art_sniperelite():
-def logo():
-print("""
+       print("""
 \033[1;31m        __/ __/ __/       __/ __/     __/ __/ __/   __/ __/ __/  \033[0m
 \033[1;31m       __/       __/  __/      __/  __/            __/          \033[0m
 \033[1;36m      __/       __/  __/      __/  __/            __/          \033[0m
@@ -24,7 +23,7 @@ print("""
 \033[1;35m    __/       __/  __/      __/            __/  __/          \033[0m
 \033[1;35m   __/       __/  __/  __/ __/            __/  __/          \033[0m
 \033[1;32m  __/ __/ __/    __/      __/   __/ __/ __/   __/ __/ __/  \033[0m
-\033[1;34m   
+\033[1;34m                                                          \033[0m          
 \033[1;34m    ## BRIGADE ATTACKER SNIPER ELITE ==> internal script By:ZA99\033[0m ##
 """)
 # Password authentication function
